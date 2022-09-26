@@ -29,7 +29,7 @@ ng serve --open
 1. It is used for creating Single Page Apps. There will be only one Main HTML page called as Index that makes UR App.
 2. It uses Components, independent self-contained units that will make up UR Application. UR App will comprise of 100s of components that will be having its own html, css, unittesting code as well as the Logical code behind that contains the event handlers for the html elements.
 3. Unit Testing is one of the features of Angular where U can have Unit testing done on each of the functionality of the Angular component. It also supports e2e(End to End) Testing using an Automation testing framework called Protractor. Jasmine is the testing framework for unit testing. 
-4. Data Binding is a very popular feature where we can bind the data of the component the User interface represented as HTML Content. Default is one-way binding. The binding happens from TS file to the html file 
+4. Data Binding is a very popular feature where we can bind the data of the component the User interface represented as HTML Content. Default is one-way binding. The binding happens from TS file to the html file. Using FormsModule, we can achieve 2 way binding also.  
  
 
 
