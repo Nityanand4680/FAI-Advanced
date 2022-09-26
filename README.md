@@ -19,6 +19,12 @@ Angular Apps are developed using a Boiler-plate code that is generated using Com
 - cd app-name ==>Move to the directory of the App
 - ng serve --open ==>Builds the App, runs it and opens it in the default browser of the System.
 
+```
+ng new app-name
+cd app-name
+ng serve --open
+```
+
 ### Features:
 1. It is used for creating Single Page Apps. There will be only one Main HTML page called as Index that makes UR App.
 2. It uses Components, independent self-contained units that will make up UR Application. UR App will comprise of 100s of components that will be having its own html, css, unittesting code as well as the Logical code behind that contains the event handlers for the html elements.
