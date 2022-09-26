@@ -35,10 +35,7 @@ ng serve --open
 ```
 ng generate component Components/ComponentName
 ```
-
-
-  
- 
-
-
- 
+To generate Components without Unit Tests Code:
+```
+ng generate component Components/MyNewFeature --skipTests
+```
