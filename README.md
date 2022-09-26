@@ -9,7 +9,10 @@ Angular Apps are developed using a Boiler-plate code that is generated using Com
 
 ### Software requirements for Angular:
 1. NodeJS installed in UR Machine. Nodejs acts like a web server for the development environment of Angular App.
-2. Install the Angular CLI Command Utility using Node Package Manager.    
+2. Install the Angular CLI Command Utility using Node Package Manager.   
+   "
+      npm install -g @angular-cli
+   " 
 
 ### Commands for creating Angular App
 - ng new app-name ==> Creates a new App with a wizard support in a folder named on the app name. 
