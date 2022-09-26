@@ -31,6 +31,10 @@ ng serve --open
 3. Unit Testing is one of the features of Angular where U can have Unit testing done on each of the functionality of the Angular component. It also supports e2e(End to End) Testing using an Automation testing framework called Protractor. Jasmine is the testing framework for unit testing. 
 4. Data Binding is a very popular feature where we can bind the data of the component the User interface represented as HTML Content. Default is one-way binding. The binding happens from TS file to the html file. Using FormsModule, we can achieve 2 way binding also.  
  
+### How to create new Component:
+```
+ng generate component Components/ComponentName
+```
 
 
   
