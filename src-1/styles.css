@@ -1,0 +1,12 @@
+/* You can add global styles to this file, and also import other style files */
+h1{
+    font-size: 40pt;
+    color:violet;
+}
+
+.footer{
+    font-style: italic;
+    font-size: 0.8em;
+    text-align: center;
+    bottom: 100%;
+}
