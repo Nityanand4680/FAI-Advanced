@@ -11,7 +11,7 @@ Angular Apps are developed using a Boiler-plate code that is generated using Com
 1. NodeJS installed in UR Machine. Nodejs acts like a web server for the development environment of Angular App.
 2. Install the Angular CLI Command Utility using Node Package Manager.   
    ```
-      npm install -g @angular-cli
+     npm install -g @angular/cli
    ```
 
 ### Commands for creating Angular App
