@@ -50,8 +50,14 @@ ng generate component Components/MyNewFeature --skipTests
 Modify the Update function by adding a new statement to update the image of the selected employee
 
 3. Consume the Web API in our Angular App by creating a new Component and its data. 
+### Services:
 Services in Angular are Singleton Classes that are used to share the state of the singleton object across the application and its components. Its scope will be within the module of the service that is created. 
 We create services to access external RESTFull Services available on the web. 
 Advantages of the services in Angular:
 - Helps in maintaining singleton data so that U can use it across the Components. 
 - Helps in Dependency Injection. All services in Angular will have a Directive called @Injectable that makes it to be used anywhere, in any component of the module available. 
+
+How to create a service:
+```
+ng g s Services/Employee --skip-tests=true
+```
