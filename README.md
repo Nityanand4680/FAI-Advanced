@@ -56,8 +56,15 @@ We create services to access external RESTFull Services available on the web.
 Advantages of the services in Angular:
 - Helps in maintaining singleton data so that U can use it across the Components. 
 - Helps in Dependency Injection. All services in Angular will have a Directive called @Injectable that makes it to be used anywhere, in any component of the module available. 
-
 How to create a service:
 ```
 ng g s Services/Employee --skip-tests=true
 ```
+
+4. Apply the routing feature to the existing angular app:
+### Routing:
+	- U can create a seperate module and add it into the App.Module. However, U can create it within the App Module itself. 
+	- U need to define the routes using Routes[] defined in RouterModule. The routes contain the possible Url mappings to the respective Components. U should also add the RouterModule.forRoots(routes) line in the imports section of the module. 
+	- U should use the <router-outlet> tag for defining the location for loading the components when the route pattern is requested in the Url. 
+	- Hyperlinks will be set using router-link attribute instead of href. 
+
