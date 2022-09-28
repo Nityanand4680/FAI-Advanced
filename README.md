@@ -39,3 +39,12 @@ To generate Components without Unit Tests Code:
 ```
 ng generate component Components/MyNewFeature --skipTests
 ```
+
+### Updating tables after modification:
+1. Update the table to add a new column for the images in the Code First Approach of EF Core:
+- Add a new property to the model class.
+- Run the Add-migration tool
+- Run the update-database tool.
+
+2. Modify the code in the web API to allow updating the image into the web API.
+Modify the Update function by adding a new statement to update the image of the selected employee
