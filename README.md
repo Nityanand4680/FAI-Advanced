@@ -39,6 +39,14 @@ To generate Components without Unit Tests Code:
 ```
 ng generate component Components/MyNewFeature --skipTests
 ```
+### Pipes
+Pipes are used to transform the data to suit the User interface requirements. All Pipes are classes that implement an interface called PipeTransform. This interface has a function called transform that contains the logic of transforming the data.
+All Pipes are classes that implement an interface called PipeTransform and have a function called transform. The transform function contains the logic of transforming the data based on UR UI requirement:
+The Command : 
+```
+ng g p Pipes/pipeName
+```
+U should implement the function and call the pipe using |. Hence the name, pipe. 
 
 ### Updating tables after modification:
 1. Update the table to add a new column for the images in the Code First Approach of EF Core:
