@@ -1,0 +1,58 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-7">
+            <h2 class="h2">List of Employees with Us!!!</h2>
+            <div>
+                <input [(ngModel)]="searchValue" placeholder="Search here" type="search" class="form-control m-2"/>
+            </div>
+            <table class="table table-bordered table-primary table-hover border-primary">
+                <thead class="table-dark">
+                <tr>
+                    <th>Employee ID</th>
+                    <th>Employee Name</th>
+                    <th>Employee Address</th>
+                    <th>Options</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let emp of empList | search: searchValue ">
+                    <!--ngFor is Angular version of foreach used for iteration-->
+                    <td>{{emp.empId}}</td>
+                    <td>{{emp.empName | uppercase}}</td>
+                    <td>{{emp.empAddress}}</td>
+                    <td>
+                        <button (click)="onDetailClick(emp)" class="btn btn-info">
+                            <i class="fa fa-eye fa-round"></i>
+                            Details
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+            </table>
+        </div>
+
+        <!-- <div *ngIf="selectedEmp.empName != null" class="col-md-5">
+            <h3>Details of the Selected Employee</h3>
+            <hr>
+            <div class="row">
+                <div class="col-md-5">
+                    <img class="card-img" [src]="selectedEmp.empImage"/>
+                </div>
+                <div class="col-md-6">
+                    <h2>{{selectedEmp.empName}}</h2>
+                    <hr>
+                    <p>{{selectedEmp.empAddress}}</p>
+                    <p>{{selectedEmp.empSalary | currency : 'INR'}} <p>
+                </div>
+                <p></p>
+            </div>
+        </div> -->
+        <div class="col-md-5">
+            <app-emp-detail [empDetails] = selectedEmp></app-emp-detail>
+        </div>
+    </div>
+    <div class="row">
+        <h2>Register New Employee</h2>
+        <app-add-emp (emitter)="onAddNew($event)"></app-add-emp>
+    </div>
+</div>

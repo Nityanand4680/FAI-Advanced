@@ -1,0 +1,20 @@
+<hr>
+<div>
+    <header>
+        <h2>Calculator Program</h2>
+    </header>
+    <p><input type="number" [(ngModel)] ="firstValue"  placeholder="Enter the First Value"></p>
+    <p>
+        <select [(ngModel)] ="operand">
+             <option>Add</option>   
+             <option>Subtract</option>   
+             <option>Multiply</option>   
+             <option>Divide</option>   
+        </select>
+    </p>
+    <p><input type="number" [(ngModel)]="secondValue" placeholder="Enter the Second Value"></p>
+    <p><input type="button" value="Calculate" (click)="operate()"></p>
+    <p>
+        <span>The Result: {{resultValue}}</span>
+    </p>
+</div>

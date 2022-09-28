@@ -1,0 +1,32 @@
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-10">
+            <div class="row">
+                <p class="col">
+                    <input [(ngModel)]="newEmp.empId" placeholder="Enter the Emp ID" class="form-control"/>
+                </p>
+                <p class="col">
+                    <input [(ngModel)]="newEmp.empName" placeholder="Enter the Emp Name" class="form-control"/>
+                </p>
+            </div>
+            <div class="row">
+                <p class="col">
+                    <input [(ngModel)]="newEmp.empAddress" placeholder="Enter the Emp Address" class="form-control"/>
+                </p>
+                <p class="col">
+                    <input [(ngModel)]="newEmp.empSalary" placeholder="Enter the Emp Salary" class="form-control"/>
+                </p>
+            </div>
+            <p>
+                Select the Image:
+                <input type="file" [(ngModel)]="newEmp.empImage" (change)="onChange($event)" placeholder="Select the Image" class="form-control"/>
+            </p>
+            <p>
+                <button class="btn btn-danger" (click)="onAddClick()">
+                    <i class="fa fa-plus-circle"></i>
+                    Add to Database</button>
+            </p>
+        </div>
+    </div>
+</div>

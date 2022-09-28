@@ -1,0 +1,16 @@
+<div *ngIf="empDetails.empName != null" class="card">
+    <div class="row">
+        <div class="col-md-5">
+            <img [src]="empDetails.empImage" class="card-img" alt="">
+        </div>
+        <div class="col-md-5 card-body card-image-overlay">
+            <h3 class="h3 card-title text-danger">{{empDetails.empName | uppercase}}</h3>
+            <hr>
+            <p class="card-text">{{empDetails.empAddress}}</p>
+            <p class="card-text">{{empDetails.empSalary | currency : 'INR'}}</p>
+            <p class="card-text">
+                <button class="btn btn-danger">Update</button>
+            </p>
+        </div>
+    </div>
+</div>
