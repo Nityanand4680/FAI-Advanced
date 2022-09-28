@@ -67,4 +67,16 @@ ng g s Services/Employee --skip-tests=true
 - U need to define the routes using Routes[] defined in RouterModule. The routes contain the possible Url mappings to the respective Components. U should also add the RouterModule.forRoots(routes) line in the imports section of the module. 
 - U should use the <router-outlet> tag for defining the location for loading the components when the route pattern is requested in the Url. 
 - Hyperlinks will be set using router-link attribute instead of href. 
+```
+   const routes : Routes =[
+  {path: '', redirectTo: "Home", pathMatch:'full'},
+  {path: 'Home', component: HomeComponent},
+  {path: 'Employees/All', component: EmpMgrComponent},
+  {path: 'Employees/Add', component: AddNewEmpComponent},
+  {path: 'Employees/Edit/:id', component: EditEmpComponent},
+  {path: 'Employees/View/:id', component: ViewEmpComponent},
+  {path: 'Calc', component: CalcComponent},  
+  {path: 'Master', component: MasterComponent}  
+]
 
+   ```
