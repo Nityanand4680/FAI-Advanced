@@ -63,8 +63,8 @@ ng g s Services/Employee --skip-tests=true
 
 4. Apply the routing feature to the existing angular app:
 ### Routing:
-	- U can create a seperate module and add it into the App.Module. However, U can create it within the App Module itself. 
-	- U need to define the routes using Routes[] defined in RouterModule. The routes contain the possible Url mappings to the respective Components. U should also add the RouterModule.forRoots(routes) line in the imports section of the module. 
-	- U should use the <router-outlet> tag for defining the location for loading the components when the route pattern is requested in the Url. 
-	- Hyperlinks will be set using router-link attribute instead of href. 
+- U can create a seperate module and add it into the App.Module. However, U can create it within the App Module itself. 
+- U need to define the routes using Routes[] defined in RouterModule. The routes contain the possible Url mappings to the respective Components. U should also add the RouterModule.forRoots(routes) line in the imports section of the module. 
+- U should use the <router-outlet> tag for defining the location for loading the components when the route pattern is requested in the Url. 
+- Hyperlinks will be set using router-link attribute instead of href. 
 
