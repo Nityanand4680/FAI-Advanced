@@ -78,5 +78,11 @@ ng g s Services/Employee --skip-tests=true
   {path: 'Calc', component: CalcComponent},  
   {path: 'Master', component: MasterComponent}  
 ]
-
+   //Add this in the imports section of the Module
+   imports: [
+    BrowserModule,
+    FormsModule,
+    HttpClientModule,
+    RouterModule.forRoot(routes)
+  ],
    ```
