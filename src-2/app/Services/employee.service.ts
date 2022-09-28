@@ -30,6 +30,13 @@ export class EmployeeService {
     return this.httpClient.get<Employee>(tempUrl);
   }
 
+  public updateEmployee(emp : Employee) : Observable<string>{
+    const tempUrl = "http://localhost:61648/Employees"
+    return this.httpClient.put<string>(tempUrl, emp);
+  } 
 
-  
+  public addEmployee(emp : Employee) :Observable<string>{
+    const tempUrl = "http://localhost:61648/Employees"
+    return this.httpClient.post<string>(tempUrl, emp);
+  }
 }
