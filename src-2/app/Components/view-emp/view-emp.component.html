@@ -1,1 +1,22 @@
-<p>view-emp works!</p>
+<div class="container">
+    <div class="row">
+        <div class="col-md-7">
+            <h2>Details of the Employee</h2>
+        <hr>
+        <p>
+            <img class="card-img" [src]="selected.empImage"/>
+        </p>  
+        <p><input type="text" disabled class="form-control" [(ngModel)]="selected.empId"></p>
+        <p><input type="text" disabled class="form-control" [(ngModel)]="selected.empName"></p>
+        <p><input type="text" disabled class="form-control" [(ngModel)]="selected.empAddress"></p>
+        <p><input type="text" disabled class="form-control" [(ngModel)]="selected.empSalary"></p>
+        <p>
+            <button class="btn btn-primary" routerLink="/Employees/All">
+                <i class="fa fa-arrow-left"></i>
+                Back
+            </button>
+        </p>
+        </div>
+        
+    </div>
+</div>

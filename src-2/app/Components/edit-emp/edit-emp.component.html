@@ -1,1 +1,27 @@
-<p>edit-emp works!</p>
+<div class="container">
+    <span>
+        {{foundEmp | json}}
+    </span>
+    <div class="row">
+        <div class="col-md-7">
+            <h2>Details of the Employee</h2>
+        <hr>
+        <p>
+            Select the File: <input type="file" class="form-control" [(ngModel)]="foundEmp.empImage"/>
+        </p>  
+        <p>Employee ID: <input type="text" disabled class="form-control" [(ngModel)]="foundEmp.empId"></p>
+        <p>Employee Name:<input type="text" class="form-control" [(ngModel)]="foundEmp.empName"></p>
+        <p>Employee Address:<input type="text" class="form-control" [(ngModel)]="foundEmp.empAddress"></p>
+        <p>Employee Salary:<input type="text" class="form-control" [(ngModel)]="foundEmp.empSalary"></p>
+        <p>
+            <button class="btn btn-info" (click)="onSubmit()">Save Changes</button>
+            <button class="btn btn-primary" routerLink="/Employees/All">
+                <i class="fa fa-arrow-left"></i>
+                Back
+            </button>
+        </p>
+        </div>
+        
+    </div>
+</div>
+
