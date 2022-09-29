@@ -94,3 +94,12 @@ ng g s Services/Employee --skip-tests=true
     RouterModule.forRoot(routes)
   ],
    ```
+5. Validations in Angular?
+-	Validations can be done in 2 ways in Angular. Template-driven Forms and Reactive Forms. 
+-	Template driven forms use the HTML attributes to validate the inputs in the form. It uses ngForm to define the form and perform the validations. Most of the validations are based on the HTML attributes like required, min, max, regular expression, email, phone no, etc. All the validation in the template driven forms are validated using the HTML attributes, so not much code is modified in the Component.ts file. 
+-	Reactive Forms came up in the later versions of Angular where we can define our validations in our Component.ts itself. We can use attributes to set the validation requirements as we did in Validations for MVC Components. Reactive Forms are the most preferred validation technique currently followed in the industry. As the data is tightly coupled in the code behind itself, the UI elements will be free from any performance issues. 
+
+### Points for validation:
+- dirty is where U modify the Element
+- touched when U focus on the element for the first time. 
+- valid is when all the validations of the Element are done.
