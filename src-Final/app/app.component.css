@@ -1,0 +1,12 @@
+.footer{
+    font-size:0.8em;
+    font-style: italic;
+    text-align: center;
+}
+
+h1{
+    text-align: center;
+    color:red;
+    padding: 20px;
+    margin:5px;
+}

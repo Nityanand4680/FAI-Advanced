@@ -1,0 +1,32 @@
+<div class="container">
+    <div class="row">
+        <div *ngFor="let c of contactList" class="card col-md-8 m-2">
+            <div class="row">
+                <div class="col-md-5">
+                    <img class="card-image" [src]=c.photo>
+                </div>
+                <div class="card-body col-md-6">
+                    <h5 class="card-title">{{c.fullName}}</h5>
+                    <p class="card-text">{{c.phoneNo}}</p>
+                    <p class="card-text">{{c.emailAddress}}</p>
+                    <div class="row">
+                        <p class="card-text">
+                            <a class="btn btn-info m-2" routerLink="/Edit/{{c.contactID}}">
+                                <i class="fa fa-edit" aria-hidden="true"></i>
+                                Edit
+                            </a>
+                            <a class="btn btn-danger m-2">
+                                <i class="fa fa-trash" aria-hidden="true"></i>
+                                Delete
+                            </a>
+                            <a class="btn btn-primary m-2" routerLink="/View/{{c.contactID}}">
+                                <i class="fa fa-eye" aria-hidden="true"></i>
+                                View
+                            </a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

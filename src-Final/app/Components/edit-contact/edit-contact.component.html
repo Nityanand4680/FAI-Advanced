@@ -1,0 +1,20 @@
+{{selectedContact | json}}
+
+<h2>Editing {{selectedContact.fullName}}</h2>
+<hr>
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <p>
+                <input type="number" disabled [(ngModel)]="selectedContact.contactID" class="form-control">
+                <input class="form-control" type="text" [(ngModel)]="selectedContact.fullName">
+                <input class="form-control" type="text" [(ngModel)]="selectedContact.emailAddress">
+                <input class="form-control" type="number" [(ngModel)]="selectedContact.phoneNo">
+                <input class="form-control" type="file" [(ngModel)]="selectedContact.photo">
+            </p>
+            <p>
+                <button class="btn btn-danger" (click)="onSave()">Save changes</button>
+            </p>
+        </div>
+    </div>
+</div>
