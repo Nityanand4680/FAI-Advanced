@@ -1,0 +1,33 @@
+﻿@model IEnumerable<MyMvcCoreWebApp.Models.EmployeeTable>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>List of Employees</h1>
+<hr />
+<div class="container-fluid">
+    <div class="row">
+        @foreach (var item in Model)
+        {
+            <div class="card col-md-5 m-1">
+                <div class="row">
+                    <div class="col-md-4">
+                        <img class="card-img" src="@item.EmpImage"/>
+                    </div>
+                    <div class="col-md-6 card-body m-2">
+                        <h3 class="card-title">@item.EmpName</h3>
+                        <hr />
+                        <p class="card-text">@item.EmpAddress</p>
+                        <p class="card-text">@item.EmpSalary</p>
+                        <p>
+                            <a class="btn btn-info" asp-action="Edit" asp-route-id="@item.EmpId">Edit</a>
+                            <a class="btn btn-danger" asp-action="Remove" asp-route-id="@item.EmpId">Delete</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+

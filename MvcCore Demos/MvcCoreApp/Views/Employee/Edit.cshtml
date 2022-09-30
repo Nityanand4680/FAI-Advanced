@@ -1,0 +1,39 @@
+﻿@model MyMvcCoreWebApp.Models.EmployeeTable
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit Record for @Model.EmpName</h1>
+<hr />
+<div class="row">
+    <div class="col-md-6 card">
+        <form asp-action="Edit" asp-method="POST">
+            <div>
+                EmpID: <input disabled asp-for="@Model.EmpId"/>
+                <input hidden asp-for="@Model.EmpId"/>
+            </div>
+            <div>
+                Enter the Name: <input asp-for="@Model.EmpName" placeholder="Enter the Name" />
+            </div>
+            <div>
+                Enter the Address: <input asp-for="@Model.EmpAddress" placeholder="Enter the Address" />
+            </div>
+            <div>
+                Enter the Salary: <input asp-for="@Model.EmpSalary" placeholder="Enter the Name" />
+            </div>
+            <div>
+                Select the Image: <input asp-for="@Model.EmpImage" />
+            </div>
+            <button class="btn btn-danger">Submit</button>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
