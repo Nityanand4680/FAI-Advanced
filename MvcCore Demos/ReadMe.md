@@ -25,6 +25,6 @@ Things to do:
 
 - UR DBContext class will be UR DBNameContext. It will be having default constructor unlike the CODE-FIRST Approach. 
 - No need to go to Startup.cs or appsettings. 
-- There is no need for Constructor in the COntroller class. 
+- There is no need for Constructor in the Controller class. 
 
  
