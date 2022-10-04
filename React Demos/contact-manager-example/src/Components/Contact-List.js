@@ -1,8 +1,28 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import ImageComponent from "../ImageComponent";
-
+import { ContactService } from '../Services/ContactService';
+import Contact from "./Contact";
 let ContactList = ()=> {
+
+//define the data for UR Component
+ let [state, setState] = useState({
+    contacts : [],
+    errorMsg : ''
+ });
+
+ //State has to retrive the data. 
+ useEffect(()=>{
+    async function fetchData(){
+        const response = await ContactService.getAllContacts();//API call....
+        setState({...state, contacts : response.data});
+    }
+    fetchData()
+ }, []);
+ 
+ let { contacts, errorMsg} = state;
+
+ ///////////////////////////V-DOM Section////////////////////////////////////////////////////////   
  return(
     <React.Fragment>
         <div className="container">
@@ -23,39 +43,13 @@ let ContactList = ()=> {
         </div>
         <hr />
         <div className="row">
-            <section className="col-md-6 m-2 bg-light">
-                <div className="container">
-                    <div className="row">
-                        <div className="col-md-4">
-                            <ImageComponent url="/images/pic1.png"/>
-                        </div>
-                        <div className="col-md-6">
-                            <input disabled className="form-control m-2" placeholder="Contact Name" value={'Phaniraj'}/>
-                            <input disabled className="form-control m-2" placeholder="Contact Email" value={'phanirajbn@gmail.com'}/>
-                            <input disabled className="form-control m-2" placeholder="Contact Phone" value={9945205684}/>
-                        </div>
-                        <div className="col-md-2">
-                            <ul className="list-group">
-                                <li className="list-group-item">
-                                    <Link to={'/contacts/edit/:contactId'} className="btn btn-warning">
-                                    <i className="fa fa-pen"/>
-                                    </Link>
-                                </li>
-                                <li className="list-group-item">
-                                    <button className="btn btn-danger">
-                                    <i className="fa fa-trash"/>
-                                    </button>
-                                </li>
-                                <li className="list-group-item">
-                                    <Link to={'/contacts/view/:contactId'} className="btn btn-success">
-                                    <i className="fa fa-eye"/>
-                                    </Link>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </section>            
+            {
+                contacts.map(c => {
+                    return (
+                        <Contact contact= {c}/> 
+                    );
+                })   
+            }            
         </div>
     </div>   
     </React.Fragment> 
