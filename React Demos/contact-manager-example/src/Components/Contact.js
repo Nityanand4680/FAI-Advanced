@@ -1,6 +1,6 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 import ImageComponent from '../ImageComponent'
+import { Navigation } from './Navigation'
 export default function Contact(props) {
   return (
     <React.Fragment>
@@ -15,25 +15,7 @@ export default function Contact(props) {
                     <input disabled className="form-control m-2" placeholder="Contact Email" value={props.contact.email} />
                     <input disabled className="form-control m-2" placeholder="Contact Phone" value={props.contact.contactNo} />
                 </div>
-                <div className="col-md-2">
-                    <ul className="list-group">
-                        <li className="list-group-item">
-                            <Link to={'/contacts/edit/:contactId'} className="btn btn-warning">
-                                <i className="fa fa-pen" />
-                            </Link>
-                        </li>
-                        <li className="list-group-item">
-                            <button className="btn btn-danger">
-                                <i className="fa fa-trash" />
-                            </button>
-                        </li>
-                        <li className="list-group-item">
-                            <Link to={'/contacts/view/:contactId'} className="btn btn-success">
-                                <i className="fa fa-eye" />
-                            </Link>
-                        </li>
-                    </ul>
-                </div>
+                <Navigation id={props.contact.id}/>                
             </div>
         </div>    
             </section>
