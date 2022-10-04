@@ -33,3 +33,6 @@ import '../node_modules/@fortawesome/fontawesome-free/css/all.css'
 6. Implement the ViewContact
 7. Implement the AddContact
 8. Implement the EditContact
+
+## Fields of contact
+
