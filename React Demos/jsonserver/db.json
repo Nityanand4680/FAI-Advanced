@@ -1,0 +1,39 @@
+{
+  "contacts": [
+    {
+      "id": 123,
+      "name": "Phaniraj",
+      "email": "phanirajbn@gmail.com",
+      "contactNo": 9945205684,
+      "photo": "/Images/pic1.png"
+    },
+    {
+      "id": 124,
+      "name": "Robert Haris",
+      "email": "roberhr@gmail.com",
+      "contactNo": 9876554423,
+      "photo": "/Images/pic2.png"
+    },
+    {
+      "id": 125,
+      "name": "Moris Grover",
+      "email": "mgrover@gmail.com",
+      "contactNo": 2344455423,
+      "photo": "/Images/pic3.png"
+    },
+    {
+      "id": 126,
+      "name": "Jacqline Fred",
+      "email": "jackFred@gmail.com",
+      "contactNo": 2344234445,
+      "photo": "/Images/pic4.png"
+    },
+    {
+      "id": 127,
+      "name": "Charles Horden",
+      "email": "charleshr@gmail.com",
+      "contactNo": 2342322234,
+      "photo": "/Images/pic5.png"
+    }
+  ]
+}
