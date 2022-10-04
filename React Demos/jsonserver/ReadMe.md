@@ -3,7 +3,7 @@
 ```
 npm install -g json-server
 ```
-2. Create a directory <anyname>
+2. Create a directory called jsonserver
 3. Open the directory from the Terminal and create a package.json file
 ```
 npm init -y
