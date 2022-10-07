@@ -116,12 +116,11 @@ ng g s Services/Employee --skip-tests=true
 - Then U bind the values to the ngModel of the input. 
 	- [(ngModel)] = value 
 - Which dependency is required for accessing REST Services in UR Angular App?
-- HttpClient from the HttpClientModule should be used.
+	- HttpClient from the HttpClientModule should be used.
 - What is the return type of all REST API Calls in Angular? => Observable<T>
-- What do we need to do if we want to display text content in upper case?
-- Using the pipe uppercase
-- Which interface is implemented by a custom pipe? =>PipeTransform and implement a function transform
-- Why do we need to create a Service in Angular? A service is created to get a singleton object so that it can be used to call methods and maintain state across the application and in all the components of the app. 
+- What do we need to do if we want to display text content in upper case? => Using the pipe uppercase
+- Which interface is implemented by a custom pipe? => PipeTransform and implement a function transform
+- Why do we need to create a Service in Angular? A service is created to get a singleton object so that it can be used to call methods and maintain state across the application and in all the components of the app. It supports Dependency Injection, Singleton Feature and State Management. 
 - How to bind an event to a function of a component in angular?
 - (click) = "function(args)" =>Refer the example of Master-Detail. 
 - How to bind a property to an element in Angular? [] =>refer img src binding.
