@@ -103,3 +103,27 @@ ng g s Services/Employee --skip-tests=true
 - dirty is where U modify the Element
 - touched when U focus on the element for the first time. 
 - valid is when all the validations of the Element are done.
+
+# Final Points:
+### After this training, U should be aware of the following concepts:
+-How to create a Component in Angular?
+	-ng g c Components/Component-name
+-What are the files that are generated when U create a Component using Angular CLI? 	-> html, css, ts file, spec.ts file. 
+-How to bind a value of the component to a <p> Tag in Angular?
+	-{{valueOfTheComponent}}
+-How to perform a 2-way binding to an input tag of an Angular Component?
+-Use the FormsModule in the app.module.ts in the imports section. 
+-Then U bind the values to the ngModel of the input. 
+	-[(ngModel)] = value 
+-Which dependency is required for accessing REST Services in UR Angular App?
+-HttpClient from the HttpClientModule should be used.
+-What is the return type of all REST API Calls in Angular?=> Observable<T>
+-What do we need to do if we want to display text content in upper case?
+-Using the pipe uppercase
+-Which interface is implemented by a custom pipe? =>PipeTransform and implement a function transform
+-Why do we need to create a Service in Angular? A service is created to get a singleton object so that it can be used to call methods and maintain state across the application and in all the components of the app. 
+-How to bind an event to a function of a component in angular?
+-(click) = "function(args)" =>Refer the example of Master-Detail. 
+-How to bind a property to an element in Angular? [] =>refer img src binding.
+-Which method(function) is used to apply routing in module.ts file 
+	-RouterModule.forRoot(routes) 
